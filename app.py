@@ -8,11 +8,12 @@ import os
 # 1. CONFIGURATION
 # ==========================================
 
-# --- UPDATE YOUR KEYS HERE ---
-os.environ["AZURE_OPENAI_API_KEY"] = "YOUR_AZURE_API_KEY_HERE"
-os.environ["AZURE_OPENAI_ENDPOINT"] = "https://YOUR-RESOURCE-NAME.openai.azure.com/"
-os.environ["OPENAI_API_VERSION"] = "2024-02-15-preview"
-DEPLOYMENT_NAME = "gpt-4o"
+# SET YOUR AZURE KEYS HERE OR IN ENVIRONMENT VARIABLES
+# You can find these in your Azure Portal -> OpenAI Resource -> Keys and Endpoint
+os.environ["AZURE_OPENAI_API_KEY"] = "4pF9FhQyfFU3YCRo0tWl5fuTyOksoK3wSXRQXznk6YazyikAoODCJQQJ99BJACfhMk5XJ3w3AAABACOGVMXX"
+os.environ["AZURE_OPENAI_ENDPOINT"] = "https://sherrie-gpt4.cognitiveservices.azure.com/"
+os.environ["OPENAI_API_VERSION"] = "2024-12-01-preview"   # 可根据你 Azure Portal 上的版本调整
+DEPLOYMENT_NAME = "gpt-4o"  # 比如 gpt-4o-mini 或 gpt-4o
 
 # Page Config
 st.set_page_config(page_title="CompAI - Level Insights", page_icon="💰")
