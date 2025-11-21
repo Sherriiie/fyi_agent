@@ -129,7 +129,7 @@ if prompt := st.chat_input("Ask about compensation..."):
                 # Custom instructions to force chart usage on specific keywords
                 final_prompt = prompt
                 if "compare" in prompt.lower() or "chart" in prompt.lower() or "visualize" in prompt.lower():
-                    final_prompt += " (If this involves comparing numbers, please use the generate_bar_chart tool.)"
+                    final_prompt += " (If this involves comparing numbers or visualizing data, please use the generate_bar_chart tool.)"
 
                 response = agent.invoke(final_prompt)
                 output_text = response["output"]
